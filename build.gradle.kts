@@ -45,7 +45,7 @@ subprojects {
         compilerOptions {
             jvmTarget.set(JvmTarget.JVM_21)
             freeCompilerArgs.addAll(listOf(
-                "-Xjvm-default=all-compatibility",
+                "-Xjvm-default=all",
                 "-Xjsr305=strict",
                 "-opt-in=org.jetbrains.kotlin.K1Deprecation"
             ))
