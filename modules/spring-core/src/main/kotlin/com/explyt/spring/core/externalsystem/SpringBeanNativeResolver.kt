@@ -125,7 +125,7 @@ class SpringBeanNativeResolver : ExternalSystemProjectResolver<NativeExecutionSe
                     getProjectDataNode(id, projectPath, runConfigurationHolder, settings, listener)
                 } catch (e: Exception) {
                     logger.warn("resolve spring project error", e)
-                    null
+                    throw ExternalSystemException(e.message, e)
                 }
             }
         } finally {
