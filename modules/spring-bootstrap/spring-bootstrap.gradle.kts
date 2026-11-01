@@ -21,7 +21,6 @@ val allCompileProjects = listOf(
     "spring-security",
     "spring-web",
     "spring-cloud",
-    "spring-initializr",
     "spring-integration",
     "spring-messaging",
     "spring-aop",
@@ -68,7 +67,7 @@ tasks.register("printPluginVersion") {
     doLast { println(versionToPrint) }
 }
 
-val springPluginName = "spring-tool"
+val springPluginName = "easy-spring"
 ext["springPluginName"] = springPluginName
 
 val distFilePostfix = rootProject.optProperty("distFilePostfix") ?: version
